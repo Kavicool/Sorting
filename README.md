@@ -16,6 +16,8 @@ Clone this repo and start:
 
 npm install
 
+ng build
+
 npm start
 
 Once both servers started, hit the application in http://localhost:4200
