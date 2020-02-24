@@ -1,0 +1,21 @@
+<mat-card> 
+  <h1>Happy Sorting</h1>
+  <form [formGroup]="sortForm" class="sort-form">
+    <mat-form-field class="sort-full-width">
+      <mat-label>Enter numbers  between 0 - 100 for sorting</mat-label>
+
+      <textarea  formControlName="sortNumbers" matInput placeholder="10,20,30, ....."></textarea>  
+
+    </mat-form-field>
+    <button mat-button (click) = 'sort()'> Sort </button>
+
+    
+    
+  </form>
+  <div *ngIf=isFlag> 
+        <p class="p-sort"> <b>Actual Number : </b> {{sortValue.beforeSort}}</p>
+        <p class="p-sort"> <b>Sorted Number :  </b>{{sortValue.afterSort}}</p>
+        <p class="p-sort"> <b>Time taken to sort : </b> {{sortValue.timeToSort}} ms</p>
+        <p class="p-sort"> <b>Position Inter Changed : </b> {{sortValue.swapCount}} </p>  
+  </div> 
+</mat-card>

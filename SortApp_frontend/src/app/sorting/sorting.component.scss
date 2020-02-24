@@ -1,0 +1,32 @@
+.sort-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .sort-full-width {
+    width: 100%;
+  }
+  
+  mat-card{
+    padding: 50px;
+    border-radius: 15px;
+    margin: 5%;
+    background-color: aliceblue;
+    width: 35%;
+  }
+ 
+  h1 {
+    text-align: center;
+    font: 26px bold;
+  }
+
+  button {
+    min-width: 100px;
+    background-color: darkgrey;
+    float: right;
+  }
+
+  .p-sort {
+    margin: 30px;    
+  }
